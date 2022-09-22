@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <title> REST Countries API with color theme switcher </title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="heading">
+            <h4> Where in the world? </h4>
+        </div>
+        <div class="dark-white-mode" id="darkmode">
+            <i class="fa-solid fa-moon" id="icon"></i>
+            <h5> Dark Mode </h5>            
+        </div>
+    </header>
+    
+    <section>
+        <div class="search-bar" >
+            <div class="search" id="search">
+                <i class="fa-solid fa-search" ></i>  
+                <input type="search" id="Searchbar" placeholder="Search for a country... ">
+            </div>
+            <div class="dropdown">
+                    <select class="navLink" id="navLink">
+                        <option value="Filter_by_Region" selected > Filter by Region </option>
+                        <option value="Africa"> Africa </option>
+                        <option value="Americas"> America </option>
+                        <option value="Asia"> Asia </option>
+                        <option value="Europe"> Europe </option>
+                        <option value="Oceania"> Oceania </option>
+                    </select>
+            </div>
+        </div>
+    </section>
+
+        <!-- Grid Container  -->
+    <section>
+       <div class="countries" id="countries">  
+                  
+        </div>
+    </section>
+    
+    <div class="pagenumbers" id="pagination"></div>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="App.js"></script>
+</body>
+</html>
